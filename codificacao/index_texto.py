@@ -1,7 +1,10 @@
 import sqlite3
+import os
+
+ROOT = os.path.dirname(os.path.dirname(__file__))
 
 # Conecta ao banco de dados principal
-conn = sqlite3.connect('index.db')
+conn = sqlite3.connect(os.path.join(ROOT, 'index.db'))
 c = conn.cursor()
 # Cria a tabela se não existir, com restrição de unicidade para evitar duplicidade
 c.execute('CREATE TABLE IF NOT EXISTS textos (id INTEGER PRIMARY KEY, titulo TEXT UNIQUE, conteudo TEXT)')

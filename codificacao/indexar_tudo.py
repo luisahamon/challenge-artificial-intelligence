@@ -3,7 +3,8 @@ import sys
 import subprocess
 
 # Caminho do banco
-db_path = 'index.db'
+ROOT = os.path.dirname(os.path.dirname(__file__))
+db_path = os.path.join(ROOT, 'index.db')
 
 # Remove o banco se já existir
 if os.path.exists(db_path):

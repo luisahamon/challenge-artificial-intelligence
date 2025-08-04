@@ -29,7 +29,8 @@ while True:
 wf.close()
 
 # Conecta ao banco de dados principal
-conn = sqlite3.connect('index.db')
+ROOT = os.path.dirname(os.path.dirname(__file__))
+conn = sqlite3.connect(os.path.join(ROOT, 'index.db'))
 c = conn.cursor()
 # Cria a tabela se não existir, com restrição de unicidade para evitar duplicidade
 c.execute('CREATE TABLE IF NOT EXISTS videos (id INTEGER PRIMARY KEY, titulo TEXT UNIQUE, transcricao TEXT)')
