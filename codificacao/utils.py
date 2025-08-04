@@ -1,6 +1,6 @@
 from typing import List, Optional, Tuple, Any
 import sqlite3
-from .db import get_connection
+from codificacao.db import get_connection
 
 def gerar_variacoes(termo: str) -> List[str]:
     """

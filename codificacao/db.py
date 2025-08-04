@@ -9,7 +9,7 @@ import logging
 from contextlib import contextmanager
 from typing import Iterator, Optional
 from pathlib import Path
-from .config import Config
+from codificacao.config import Config
 
 # Logger para operações de banco
 logger = logging.getLogger(__name__)

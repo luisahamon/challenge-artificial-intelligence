@@ -1,10 +1,10 @@
 import random
 import re
 from typing import Dict, List, Optional, Any, Union
-from .utils import buscar_conteudo
-from .config import Config
-from .logger_config import setup_logger, log_performance
-from .validation import validate_input_parameters, ValidationError
+from codificacao.utils import buscar_conteudo
+from codificacao.config import Config
+from codificacao.logger_config import setup_logger, log_performance
+from codificacao.validation import validate_input_parameters, ValidationError
 
 class GeradorConteudoDinamico:
     """

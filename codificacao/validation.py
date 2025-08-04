@@ -3,7 +3,7 @@ Sistema de validação robusto para parâmetros de entrada.
 """
 
 from typing import Any, List, Optional
-from .config import Config
+from codificacao.config import Config
 
 class ValidationError(Exception):
     """Exceção customizada para erros de validação."""

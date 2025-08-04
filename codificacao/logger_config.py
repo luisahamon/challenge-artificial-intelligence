@@ -7,7 +7,7 @@ import os
 import time
 from functools import wraps, lru_cache
 from typing import Optional
-from .config import Config
+from codificacao.config import Config
 
 # Cache global para formatters e loggers configurados
 _configured_loggers = set()

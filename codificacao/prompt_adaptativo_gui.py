@@ -10,9 +10,9 @@ from typing import Dict, List, Tuple, Optional
 # Configuração única de warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-from .utils import buscar_conteudo
-from .db import check_db_or_exit
-from .gerador_conteudo import gerador_conteudo
+from codificacao.utils import buscar_conteudo
+from codificacao.db import check_db_or_exit
+from codificacao.gerador_conteudo import gerador_conteudo
 
 check_db_or_exit()
 
